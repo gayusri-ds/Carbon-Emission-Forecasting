@@ -1,4 +1,4 @@
-# Carbon Emission Analysis and Prediction
+# Carbon Emission Analysis and Forecasting
 
 ## Overview
 This project encompasses data preprocessing, exploratory data analysis (EDA), and comparison of three different models for carbon emission prediction. The goal is to understand emission trends and identify the most effective predictive model. The dataset used for analysis is obtained from Kaggle and is stored in the file `emissions.csv`.
@@ -43,9 +43,16 @@ To run the project:
 - `non_stationary_data_30.csv`: CSV file containing non-stationary time series data.
 - **Trained models**: Models are saved in separate folders (`/lstm`, `/gru`, `/simple_rnn`) named according to the state, sector, and fuel type.
 
+  
 ## Model Evaluation
-- Training and test Mean Absolute Percentage Error (MAPE) are calculated for each model.
-- Model performances are compared to determine the most effective predictive model for carbon emission forecasting.
+The performance of each model was evaluated based on both training and test accuracy. The results are as follows:
+
+| Algorithms | Train Accuracy | Test Accuracy |
+|------------|----------------|---------------|
+| LSTM       | 99.68%         | 98.40%        |
+| SimpleRNN  | 98.55%         | 99.76%        |
+| GRU        | 99.70%         | 98.64%        |
 
 ## Results and Insights
-The project provides insights into carbon emission trends, identifies outliers, evaluates data normality and stationarity, and compares the performance of different predictive models. The findings contribute to environmental analysis and can inform policy-making and sustainability efforts.
+The project provides insights into carbon emission trends, identifies outliers, evaluates data normality and stationarity, and compares the performance of different forecasting models. The findings contribute to environmental analysis and can inform policy-making and sustainability efforts.
+
